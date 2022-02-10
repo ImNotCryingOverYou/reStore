@@ -1,5 +1,5 @@
 
-https://imnotcryingoveryou.github.io/reStore/
+https://palladiumv.github.io/reStore/
 
 
 # Getting Started with Create React App
