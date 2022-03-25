@@ -5,18 +5,18 @@ export default class BookstoreService {
     data = [
         {
             id: 1,
-            title: 'Production-Ready Microservices',
-            author: 'Susan J. Fowler',
+            title: 'Гарри Поттер и узник Азкабана',
+            author: 'Кэтлин Джоан Роулинг  ',
             price: 32,
-            coverImage: 'https://images-na.ssl-images-amazon.com/images/I/41yJ75gpV-L._SX381_BO1,204,203,200_.jpg'
+            coverImage: 'https://cdn1.ozone.ru/multimedia/1011027243.jpg'
         },
         {
             id: 2,
-            title: 'Release It!',
-            author: 'Michael T. Nygard',
+            title: 'Властелин колец: Хранители кольца',
+            author: 'Джон Р.Р. Толкин',
             price: 45,
-            coverImage: 'https://images-na.ssl-images-amazon.com/images/I/414CRjLjwgL._SX403_BO1,204,203,200_.jpg'
-        }
+            coverImage: 'https://s1.livelib.ru/boocover/1000499615/o/328a/Tolkin_Dzh.R.R.__Vlastelin_kolets._Trilogiya._Kn._1._Hraniteli_koltsa.jpeg'
+        },
     ];
 
     getBooks() {

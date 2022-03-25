@@ -10,6 +10,7 @@ import { compose } from '../../utils';
 import './book-list.css';
 
 const BookList = ({ books, onAddedToCart }) => {
+
     return (
         <ul className="book-list">
             {
@@ -26,6 +27,7 @@ const BookList = ({ books, onAddedToCart }) => {
 }
 
 class BookListContainer extends Component {
+
     componentDidMount() {
         this.props.fetchBooks();
     }
