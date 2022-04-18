@@ -21,13 +21,14 @@ const updateCartItems = (cartItems, item, idx) => {
 }
 
 const updateCartItem = (book, item = {}, quantity) => {
-    const { id = book.id, count = 0, title = book.title, total = 0 } = item;
-
+    const { id = book.id, count = 0, title = book.title, coverImage = book.coverImage, total = 0 } = item;
     return {
         id,
         title,
         count: count + quantity,
-        total: total + quantity * book.price
+        total: total + quantity * book.price,
+        bookPrice: book.price,
+        coverImage,
     }
 }
 

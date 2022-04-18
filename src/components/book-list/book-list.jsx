@@ -10,14 +10,13 @@ import { compose } from '../../utils';
 import './book-list.css';
 
 const BookList = ({ books, onAddedToCart }) => {
-
     return (
         <ul className="book-list">
             {
                 books.map((book) => {
                     return (
                         <li key={book.id}><BookListItem book={book}
-                            onAddedToCart={() => onAddedToCart(book.id)} />
+                            onAddedToCart={() => onAddedToCart(book.id, book.coverImage)} />
                         </li>
                     )
                 })
@@ -54,7 +53,7 @@ const mapStateToProps = ({ bookList: { books, loading, error } }) => {
 const mapDispatchToProps = (dispatch, { bookstoreService }) => {
     return {
         fetchBooks: fetchBooks(bookstoreService, dispatch),
-        onAddedToCart: (id) => dispatch(bookAddedToCart(id))
+        onAddedToCart: (id, coverImage) => dispatch(bookAddedToCart(id, coverImage))
 
     };
 };
